@@ -1,0 +1,41 @@
+{
+  "name": "float-equal",
+  "version": "0.0.0",
+  "description": "Check if two floats are almost equal",
+  "license": "MIT",
+  "repository": "sindresorhus/float-equal",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "float",
+    "number",
+    "epsilon",
+    "equal",
+    "same",
+    "almost",
+    "compare",
+    "comparison",
+    "round",
+    "near",
+    "tolerance",
+    "upperbound"
+  ],
+  "dependencies": {
+    "number-epsilon": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
