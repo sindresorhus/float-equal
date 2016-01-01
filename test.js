@@ -1,9 +1,7 @@
-'use strict';
-var test = require('ava');
-var floatEqual = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(floatEqual(0.1 + 0.2, 0.3));
-	t.assert(!floatEqual(0.1 + 0.4, 0.3));
-	t.end();
+test(t => {
+	t.true(m(0.1 + 0.2, 0.3));
+	t.false(m(0.1 + 0.4, 0.3));
 });
