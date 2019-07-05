@@ -1,3 +1,15 @@
 'use strict';
 
-module.exports = (a, b) => Math.abs(a - b) < Number.EPSILON;
+module.exports = (a, b) => {
+	if (a === b) {
+		return true;
+	}
+
+	const diff = Math.abs(a - b);
+
+	if (diff < Number.EPSILON) {
+		return true;
+	}
+
+	return diff <= Number.EPSILON * Math.min(Math.abs(a), Math.abs(b));
+};
