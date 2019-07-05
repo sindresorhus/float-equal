@@ -1,6 +1,3 @@
 'use strict';
-var EPSILON = require('number-epsilon');
 
-module.exports = function (a, b) {
-	return Math.abs(a - b) < EPSILON;
-};
+module.exports = (a, b) => Math.abs(a - b) < Number.EPSILON;
