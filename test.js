@@ -1,5 +1,5 @@
 import test from 'ava';
-import floatEqual from '.';
+import floatEqual from './index.js';
 
 test('main', t => {
 	t.true(floatEqual(0.1 + 0.2, 0.3));

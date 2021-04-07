@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = (a, b) => {
+export default function floatEqual(a, b) {
 	if (a === b) {
 		return true;
 	}
@@ -12,4 +10,4 @@ module.exports = (a, b) => {
 	}
 
 	return diff <= Number.EPSILON * Math.min(Math.abs(a), Math.abs(b));
-};
+}

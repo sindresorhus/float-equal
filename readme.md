@@ -13,7 +13,7 @@ $ npm install float-equal
 ## Usage
 
 ```js
-const floatEqual = require('float-equal');
+import floatEqual from 'float-equal';
 
 console.log(0.1 + 0.2 === 0.3);
 //=> false
